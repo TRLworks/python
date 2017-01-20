@@ -1,0 +1,59 @@
+[] ./start_me.sh
+New python executable in /Users/jselvakumar/.virtualenvs/rm-automation/bin/python2.7
+Also creating executable in /Users/jselvakumar/.virtualenvs/rm-automation/bin/python
+Installing setuptools, pip, wheel...done.
+Requirement already up-to-date: pip in /Users/jselvakumar/.virtualenvs/rm-automation/lib/python2.7/site-packages
+Collecting gitdb2==2.0.0 (from -r requirements.txt (line 1))
+  Downloading gitdb2-2.0.0-py2.py3-none-any.whl (63kB)
+Collecting Jinja2==2.8.1 (from -r requirements.txt (line 2))
+  Using cached Jinja2-2.8.1-py2.py3-none-any.whl
+Collecting MarkupSafe==0.23 (from -r requirements.txt (line 3))
+Collecting python-gitlab==0.18 (from -r requirements.txt (line 4))
+Collecting requests==2.12.4 (from -r requirements.txt (line 5))
+  Using cached requests-2.12.4-py2.py3-none-any.whl
+Collecting sh==1.12.8 (from -r requirements.txt (line 6))
+  Downloading sh-1.12.8-py2.py3-none-any.whl
+Collecting simplejson==3.10.0 (from -r requirements.txt (line 7))
+  Downloading simplejson-3.10.0.tar.gz (77kB)
+Collecting six==1.10.0 (from -r requirements.txt (line 8))
+  Using cached six-1.10.0-py2.py3-none-any.whl
+Collecting smmap2==2.0.1 (from -r requirements.txt (line 9))
+  Using cached smmap2-2.0.1-py2.py3-none-any.whl
+Building wheels for collected packages: simplejson
+  Running setup.py bdist_wheel for simplejson: started
+  Running setup.py bdist_wheel for simplejson: finished with status 'done'
+  Stored in directory: /Users/jselvakumar/Library/Caches/pip/wheels/43/c5/ef/edcebbb19becffd2ba75bf219afdbb4ca85198b2d909f1b31b
+Successfully built simplejson
+Installing collected packages: smmap2, gitdb2, MarkupSafe, Jinja2, six, requests, python-gitlab, sh, simplejson
+Successfully installed Jinja2-2.8.1 MarkupSafe-0.23 gitdb2-2.0.0 python-gitlab-0.18 requests-2.12.4 sh-1.12.8 simplejson-3.10.0 six-1.10.0 smmap2-2.0.1
+
+[] ./start_me.sh
+New python executable in /Users/jselvakumar/.virtualenvs/rm-automation/bin/python2.7
+Not overwriting existing python script /Users/jselvakumar/.virtualenvs/rm-automation/bin/python (you must use /Users/jselvakumar/.virtualenvs/rm-automation/bin/python2.7)
+Installing setuptools, pip, wheel...done.
+Requirement already up-to-date: pip in /Users/jselvakumar/.virtualenvs/rm-automation/lib/python2.7/site-packages
+Requirement already up-to-date: gitdb2==2.0.0 in /Users/jselvakumar/.virtualenvs/rm-automation/lib/python2.7/site-packages (from -r requirements.txt (line 1))
+Requirement already up-to-date: Jinja2==2.8.1 in /Users/jselvakumar/.virtualenvs/rm-automation/lib/python2.7/site-packages (from -r requirements.txt (line 2))
+Requirement already up-to-date: MarkupSafe==0.23 in /Users/jselvakumar/.virtualenvs/rm-automation/lib/python2.7/site-packages (from -r requirements.txt (line 3))
+Requirement already up-to-date: python-gitlab==0.18 in /Users/jselvakumar/.virtualenvs/rm-automation/lib/python2.7/site-packages (from -r requirements.txt (line 4))
+Requirement already up-to-date: requests==2.12.4 in /Users/jselvakumar/.virtualenvs/rm-automation/lib/python2.7/site-packages (from -r requirements.txt (line 5))
+Requirement already up-to-date: sh==1.12.8 in /Users/jselvakumar/.virtualenvs/rm-automation/lib/python2.7/site-packages (from -r requirements.txt (line 6))
+Requirement already up-to-date: simplejson==3.10.0 in /Users/jselvakumar/.virtualenvs/rm-automation/lib/python2.7/site-packages (from -r requirements.txt (line 7))
+Requirement already up-to-date: six==1.10.0 in /Users/jselvakumar/.virtualenvs/rm-automation/lib/python2.7/site-packages (from -r requirements.txt (line 8))
+Requirement already up-to-date: smmap2==2.0.1 in /Users/jselvakumar/.virtualenvs/rm-automation/lib/python2.7/site-packages (from -r requirements.txt (line 9))
+
+[] ./start_me.sh
+New python executable in /Users/jselvakumar/.virtualenvs/rm-automation/bin/python2.7
+Not overwriting existing python script /Users/jselvakumar/.virtualenvs/rm-automation/bin/python (you must use /Users/jselvakumar/.virtualenvs/rm-automation/bin/python2.7)
+Installing setuptools, pip, wheel...done.
+Requirement already up-to-date: pip in /Users/jselvakumar/.virtualenvs/rm-automation/lib/python2.7/site-packages
+Requirement already up-to-date: gitdb2==2.0.0 in /Users/jselvakumar/.virtualenvs/rm-automation/lib/python2.7/site-packages (from -r requirements.txt (line 1))
+Requirement already up-to-date: Jinja2==2.8.1 in /Users/jselvakumar/.virtualenvs/rm-automation/lib/python2.7/site-packages (from -r requirements.txt (line 2))
+Requirement already up-to-date: MarkupSafe==0.23 in /Users/jselvakumar/.virtualenvs/rm-automation/lib/python2.7/site-packages (from -r requirements.txt (line 3))
+Requirement already up-to-date: python-gitlab==0.18 in /Users/jselvakumar/.virtualenvs/rm-automation/lib/python2.7/site-packages (from -r requirements.txt (line 4))
+Requirement already up-to-date: requests==2.12.4 in /Users/jselvakumar/.virtualenvs/rm-automation/lib/python2.7/site-packages (from -r requirements.txt (line 5))
+Requirement already up-to-date: sh==1.12.8 in /Users/jselvakumar/.virtualenvs/rm-automation/lib/python2.7/site-packages (from -r requirements.txt (line 6))
+Requirement already up-to-date: simplejson==3.10.0 in /Users/jselvakumar/.virtualenvs/rm-automation/lib/python2.7/site-packages (from -r requirements.txt (line 7))
+Requirement already up-to-date: six==1.10.0 in /Users/jselvakumar/.virtualenvs/rm-automation/lib/python2.7/site-packages (from -r requirements.txt (line 8))
+Requirement already up-to-date: smmap2==2.0.1 in /Users/jselvakumar/.virtualenvs/rm-automation/lib/python2.7/site-packages (from -r requirements.txt (line 9))
+

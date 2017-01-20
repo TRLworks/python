@@ -1,0 +1,9 @@
+gitdb2==2.0.0
+Jinja2==2.8.1
+MarkupSafe==0.23
+python-gitlab==0.18
+requests==2.12.4
+sh==1.12.8
+simplejson==3.10.0
+six==1.10.0
+smmap2==2.0.1
