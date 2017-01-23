@@ -1,0 +1,6 @@
+{
+    "directories_to_test": [
+            "/opt/tests/project/modules/custom",
+            "/opt/tests/project/themes/custom"
+    ]
+}

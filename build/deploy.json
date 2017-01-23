@@ -1,0 +1,122 @@
+{
+    "artifactory": {
+        "username": "new-cms-project",
+        "password": "ARTIFACTORY_PASSWORD",
+        "instances": [
+            "http://mic-pele-artifact.msred.dom:8081/artifactory",
+            "http://trc-ptc-afact01.msred.dom:8081/artifactory"
+        ],
+        "archive_exclude_directories": [
+            "build",
+            "deploy",
+            "test",
+            "tests"
+        ],
+        "archive_exclude_extensions": [
+            "txt",
+            "TXT",
+            "example.settings.local.php",
+            "example.sites.php",
+            "settings.php.QA1",
+            "settings.php.DEV"
+        ]
+    },
+    "development": {
+        "ansible_tower_instance": "mic-tst-itass01.msgreen.dom",
+        "authorized_users": [
+            "any"
+        ],
+        "dockerfile": "build/Dockerfile.deploy",
+        "job_name": "new-cms-project: deploy - development environment",
+        "password": "MSGREEN_DEPLOY_PASSWORD",
+        "prerequisite": "any",
+        "username": "new-cms-project-deployer"
+    },
+    "testing": {
+        "ansible_tower_instance": "mic-tst-itass01.msgreen.dom",
+        "authorized_users": [
+            "glenbert.garing@bayviewtechnology.com",
+            "jennifer.gregorio@bayviewtechnology.com",
+            "jeremiah.selvakumar@bayviewtechnology.com",
+            "krystelmae.penoso@bayviewtechnology.com",
+            "massimo.gervasini@esl-asia.com",
+            "renzjonathan.alib@bayviewtechnology.com"
+        ],
+        "dockerfile": "build/Dockerfile.deploy",
+        "job_name": "new-cms-project: deploy - testing environment (QA)",
+        "password": "MSGREEN_DEPLOY_PASSWORD",
+        "prerequisite": "development",
+        "username": "new-cms-project-deployer"
+    },
+    "staging": {
+        "ansible_tower_instance": "msc-co-itass01.msorange.dom",
+        "authorized_users": [
+            "glenbert.garing@bayviewtechnology.com",
+            "jennifer.gregorio@bayviewtechnology.com",
+            "jeremiah.selvakumar@bayviewtechnology.com",
+            "krystelmae.penoso@bayviewtechnology.com",
+            "massimo.gervasini@esl-asia.com",
+            "renzjonathan.alib@bayviewtechnology.com"
+        ],
+        "dockerfile": "build/Dockerfile.deploy",
+        "job_name": "new-cms-project: deploy - staging environent",
+        "password": "MSORANGE_DEPLOY_PASSWORD",
+        "prerequisite": "testing",
+        "username": "new-cms-project-deployer"
+    },
+    "staging-signoff": {
+        "authorized_users": [
+            "any",
+            "glenbert.garing@bayviewtechnology.com",
+            "jennifer.gregorio@bayviewtechnology.com",
+            "jeremiah.selvakumar@bayviewtechnology.com",
+            "krystelmae.penoso@bayviewtechnology.com",
+            "massimo.gervasini@esl-asia.com",
+            "renzjonathan.alib@bayviewtechnology.com"
+        ],
+        "prerequisite": "staging"
+    },
+    "internal-production": {
+        "ansible_tower_instance": "trc-ptc-itass01.msred.dom",
+        "authorized_users": [
+            "glenbert.garing@bayviewtechnology.com",
+            "jennifer.gregorio@bayviewtechnology.com",
+            "jeremiah.selvakumar@bayviewtechnology.com",
+            "krystelmae.penoso@bayviewtechnology.com",
+            "massimo.gervasini@esl-asia.com",
+            "renzjonathan.alib@bayviewtechnology.com"
+        ],
+        "dockerfile": "build/Dockerfile.deploy",
+        "job_name": "new-cms-project: Deploy - Internal production",
+        "password": "MSRED_DEPLOY_PASSWORD",
+        "prerequisite": "staging-signoff",
+        "username": "new-cms-project-deployer"
+    },
+    "internal-production-signoff": {
+        "authorized_users": [
+            "glenbert.garing@bayviewtechnology.com",
+            "jennifer.gregorio@bayviewtechnology.com",
+            "jeremiah.selvakumar@bayviewtechnology.com",
+            "krystelmae.penoso@bayviewtechnology.com",
+            "massimo.gervasini@esl-asia.com",
+            "renzjonathan.alib@bayviewtechnology.com"
+        ],
+        "prerequisite": "internal-production"
+    },
+    "production": {
+        "ansible_tower_instance": "trc-ptc-itass01.msred.dom",
+        "authorized_users": [
+            "glenbert.garing@bayviewtechnology.com",
+            "jennifer.gregorio@bayviewtechnology.com",
+            "jeremiah.selvakumar@bayviewtechnology.com",
+            "krystelmae.penoso@bayviewtechnology.com",
+            "massimo.gervasini@esl-asia.com",
+            "renzjonathan.alib@bayviewtechnology.com"
+        ],
+        "dockerfile": "build/Dockerfile.deploy",
+        "job_name": "new-cms-project: deploy - Production (front facing)",
+        "password": "MSRED_DEPLOY_PASSWORD",
+        "prerequisite": "internal-production-signoff",
+        "username": "new-cms-project-deployer"
+    }
+}
