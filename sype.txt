@@ -1,2 +1,2 @@
 
-open -na /Applications/Skype.app/ --args -DataPath /Users/jselvakumar/Library/Application\ Support/Skype2
+open -na /Applications/Skype.app/ --args -DataPath /Users/<>/Library/Application\ Support/Skype2
